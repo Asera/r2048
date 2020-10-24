@@ -1,0 +1,21 @@
+[package]
+name = "r2048"
+version = "0.1.0"
+authors = ["artistarc <asera2@yandex.ru>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[profile.release]
+panic = 'abort'
+opt-level = "z"
+lto = true
+codegen-units = 1
+
+[dependencies]
+glium = "0.27.0"
+image = "0.23.6"
+winit = "0.22.2"
+glium_text_nxt = "0.15.0"
+rand = "0.7.3"
+nalgebra = "0.21.1"
+nalgebra-glm = "0.7.0"
